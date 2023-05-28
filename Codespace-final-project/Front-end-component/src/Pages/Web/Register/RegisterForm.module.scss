@@ -1,0 +1,49 @@
+@import '../../../Variables/Variables.scss';
+.registerForm {
+  @include formStyle;
+  gap: 0.5rem;
+  min-height: 98vh;
+  width: 100%;
+ 
+
+  input {
+    @include sizeInputs;
+    border: 0.5px solid rgb(205, 203, 203);
+  }
+  input::placeholder{
+    color:grey;
+  }
+  .submit {
+    @include buttonFormStyle;
+   width: 7rem;
+  }
+  .submit:hover{
+    background-color: $newColorBackGrounds;
+    color: white;
+  
+  }
+  select {
+   @include sizeSelects;
+   background-color: rgb(236, 232, 232, 0);
+   border: 1px solid rgb(183, 181, 181);
+   font-family: 'Albert Sans', sans-serif;
+   color: grey;
+  }
+  select option{
+    color: grey;
+  }
+
+  .login {
+    @include buttonNoButtonStyle;
+    font-size: 1.5rem;
+
+  }
+  .login:hover {
+    color: $colorYellowTexts;  
+  }
+
+  .optionsText {
+    color: white;
+  }
+
+}

@@ -1,0 +1,76 @@
+@import '../../Variables/Variables.scss';
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  padding: 1rem;
+
+
+  .imageArticle {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .titleArticle {
+    font-size: 30px;
+    color: rgb(6, 6, 6);
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+  }
+
+  
+  .textArticle {
+
+    font-size: 5rem;
+    text-align: justify;
+    padding: 5rem;
+    text-indent: 3rem;
+    max-width: 100%;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: rgb(6, 6, 6);
+    white-space: pre-line;
+    width: 90%;
+    margin-left: 5rem;
+
+
+
+  }
+
+  .textArticle:first-letter {
+    text-transform: uppercase;
+  }
+
+
+  .published {
+    color: rgb(81, 77, 77);
+  }
+
+
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  .goBack {
+    @include buttonFormStyle;
+    width: 7rem;
+
+  }
+
+  .goBack:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+
+}

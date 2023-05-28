@@ -1,0 +1,119 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.newArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  min-height: 90vh;
+}
+.newArticle input {
+  min-height: 3em;
+  min-width: 30em;
+  gap: 1.5em;
+}
+.newArticle select {
+  min-height: 3em;
+  min-width: 30em;
+}
+.newArticle .headerForm .customFileUpload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: rgba(98, 64, 64, 0);
+  color: grey;
+  border-radius: 4px;
+  font-family: "Albert Sans", sans-serif;
+  align-self: left;
+}
+.newArticle .headerForm .customFileUpload:hover {
+  background-color: #9dcedb;
+}
+.newArticle .headerForm .customFileUpload i {
+  margin-right: 5px;
+}
+.newArticle .headerForm .uploadDefault {
+  display: none;
+}
+.newArticle .linkBtn {
+  background-color: rgba(187, 213, 215, 0.207);
+  border: rgba(187, 213, 215, 0.207);
+  width: 200px;
+}
+.newArticle input {
+  min-height: 3em;
+  min-width: 33.3333333333%;
+  gap: 2em;
+  border-radius: 10px;
+  border: white;
+  border: 0.5px solid rgb(205, 203, 203);
+}
+.newArticle input::-moz-placeholder {
+  color: grey;
+  font-family: "Albert Sans", sans-serif;
+}
+.newArticle input::placeholder {
+  color: grey;
+  font-family: "Albert Sans", sans-serif;
+}
+.newArticle textarea {
+  min-height: 3em;
+  min-width: 33.3333333333%;
+  gap: 2em;
+  border-radius: 10px;
+  border: white;
+  border: 0.5px solid rgb(205, 203, 203);
+}
+.newArticle textarea::-moz-placeholder {
+  color: grey;
+  font-family: "Albert Sans", sans-serif;
+}
+.newArticle textarea::placeholder {
+  color: grey;
+  font-family: "Albert Sans", sans-serif;
+}
+.newArticle .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  width: 7rem;
+}
+.newArticle .submit:hover {
+  background-color: #125566;
+  color: white;
+}
+.newArticle select {
+  min-height: 3em;
+  min-width: 20%;
+  gap: 2em;
+  border-radius: 10px;
+  border: 2.2px solid grey;
+  margin: 0.5rem;
+  background-color: rgba(236, 232, 232, 0);
+  border: 1px solid rgb(183, 181, 181);
+  font-family: "Albert Sans", sans-serif;
+  color: grey;
+}
+.newArticle select option {
+  color: grey;
+  font-family: "Albert Sans", sans-serif;
+}
+.newArticle .login {
+  background-color: rgba(187, 213, 215, 0.207);
+  border: rgba(187, 213, 215, 0.207);
+  width: 200px;
+}/*# sourceMappingURL=NewBlogArticleComponent.module.css.map */

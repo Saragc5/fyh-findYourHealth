@@ -1,0 +1,57 @@
+/* Estilos que se aplican solo a pantallas con un ancho igual o superior a 768px (md) */
+/* Estilos que se aplican solo a pantallas con un ancho inferior a 540px (sm) */
+.newArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  min-height: 80vh;
+}
+.newArticle input {
+  min-height: 3em;
+  min-width: 30em;
+  gap: 1.5em;
+}
+.newArticle select {
+  min-height: 3em;
+  min-width: 30em;
+}
+.newArticle h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(33, 66, 173);
+  color: rgb(235, 238, 245);
+  font-weight: light;
+  font-size: 2.5vw;
+  text-decoration: none;
+}
+.newArticle .linkBtn {
+  background-color: rgba(187, 213, 215, 0.207);
+  border: rgba(187, 213, 215, 0.207);
+  width: 200px;
+}
+.newArticle input {
+  min-height: 3em;
+  min-width: 33.3333333333%;
+  gap: 2em;
+  border-radius: 10px;
+  border: white;
+}
+.newArticle .submit {
+  width: 100px;
+}
+.newArticle select {
+  min-height: 3em;
+  min-width: 20%;
+  gap: 2em;
+  border-radius: 10px;
+  border: 2.2px solid grey;
+  margin: 0.5rem;
+}
+.newArticle .login {
+  background-color: rgba(187, 213, 215, 0.207);
+  border: rgba(187, 213, 215, 0.207);
+  width: 200px;
+}/*# sourceMappingURL=NewBlogArticlePage.module.css.map */

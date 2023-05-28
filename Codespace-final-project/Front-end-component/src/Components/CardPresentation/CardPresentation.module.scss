@@ -1,0 +1,46 @@
+@import '../../Variables/Variables.scss';
+
+.cardPresentation {
+  @include grid;
+  width: 20rem;
+  height: 20rem;
+
+  @include media-down(lg) {
+    width: 50%;
+    height: auto;
+
+  }
+
+  img {
+    width: 75%;
+    height: 100%;
+    border-radius: 50%;
+
+    @include media-down(lg) {
+      width: 60%;
+      height: auto;
+      justify-self: center;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    font-size: 2.8rem;
+
+    @include media-down(lg) {
+      font-size: 2.2rem;
+    }
+
+    @include media-down(md) {
+      font-size: 2rem;
+      ;
+
+    }
+
+    @include media-down(sm) {
+      font-size: 1.7rem;
+
+    }
+  }
+
+}

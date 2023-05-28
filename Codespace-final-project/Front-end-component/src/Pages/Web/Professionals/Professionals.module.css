@@ -1,0 +1,13 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.container .header {
+  background-image: url("../../../Assets/Images/Headers/food1.jpg");
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+}
+@media only screen and (max-width: 950px) {
+  .container .header {
+    height: 150px;
+  }
+}/*# sourceMappingURL=Professionals.module.css.map */

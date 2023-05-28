@@ -1,0 +1,55 @@
+@import '../../../Variables/Variables.scss';
+
+.loginForm {
+  @include formStyle;
+  gap: 0.5rem;
+  min-height: 100vh;
+  width: 100%;
+
+
+  p {
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+  .inputLogin {
+    @include sizeInputs;
+    margin: 0.5rem;
+    border: 0.5px solid grey;
+  }
+
+  .inputLogin::placeholder {
+    font-family: 'Albert Sans', sans-serif;
+    color: grey;
+
+  }
+
+  .register {
+    @include buttonNoButtonStyle;
+    font-size: 1.5rem;
+
+  }
+
+  .register:hover {
+    color: $colorYellowTexts;
+  }
+
+  .loginButton {
+    @include buttonFormStyle;
+    width: 6.4rem;
+    margin-left: 28%;
+
+
+  }
+
+  .loginButton:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+
+  }
+
+
+}
+
+
+
+  

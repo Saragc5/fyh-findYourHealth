@@ -1,0 +1,218 @@
+@import '../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Carter+One&family=Just+Another+Hand&family=Nothing+You+Could+Do&display=swap");
+
+/* The menu is changing to hamburger menu in size 750px */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $newColorBackGrounds;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+
+  .logo {
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: rgb(239, 229, 229);
+    transition: 0.3s ease-in-out;
+    color: white;
+  }
+
+  h1 {
+    color: white;
+
+
+  }
+
+  .title {
+    font-style: oblique;
+    margin-left: 26rem;
+
+    @include media-down(xll) {
+      display: none;
+    }
+
+
+  }
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+
+  li {
+    list-style: none;
+
+
+
+    .links {
+      padding: 0 20px;
+      position: relative;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: rgb(239, 229, 229);
+      transition: 0.3s ease-in-out;
+      color: white;
+      font-family: 'Nothing You Could Do', cursive;
+
+
+    }
+
+
+
+    .linksName {
+      padding: 0 20px;
+      position: relative;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $colorYellowTexts;
+      transition: 0.3s ease-in-out;
+      font-style: oblique;
+      font-family: 'Nothing You Could Do', cursive;
+
+
+    }
+
+
+  }
+
+  li:hover .links {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-decoration: underline;
+    font-weight: bolder;
+  }
+
+  li:hover .linksName {
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+
+  }
+
+
+}
+
+
+
+.mobile {
+  display: none;
+
+  /* With this I make the hamburger icon not visible as long as the screen is not smaller */
+  i {
+    color: #fff;
+    align-items: center;
+    /* Even the media below, it does not appear activated */
+  }
+}
+
+@include media-down(lg) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #1b73c0;
+    background-color: #125566;
+    box-shadow: 0 40px 60px rgba(223, 16, 16, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+
+  }
+
+
+
+  /* With this appears the ham icon in mobile mode*/
+  .navbarActive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 90px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: $newColorbackgroundAqua;
+    background-color: #125566;
+    font-family: 'Nothing You Could Do', cursive;
+    color: white;
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    right: 0px;
+    z-index: 9;
+
+    .links {
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: white;
+      transition: 0.3s ease-in-out;
+    }
+
+    .linksName {
+      padding: 0 3px;
+      position: relative;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $colorYellowTexts;
+      transition: 0.3s ease-in-out;
+      font-style: oblique;
+
+
+    }
+
+    li {
+      list-style: none;
+      color: rgb(239, 229, 229);
+
+    }
+
+    li:hover a {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+  }
+
+
+  .mobile {
+    display: block;
+
+    i {
+      font-size: 24px;
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+
+}

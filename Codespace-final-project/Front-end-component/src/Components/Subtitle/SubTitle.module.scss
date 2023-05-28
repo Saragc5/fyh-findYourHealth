@@ -1,0 +1,27 @@
+@import '../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+
+.containerSubtitle {
+  padding: 4rem;
+  background-color: rgb(186, 209, 212, 0);
+
+  h1 {
+    color: $newColorBackGrounds;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.7rem;
+
+    @include media-down(lg) {
+      font-size: 2.2rem;
+    }
+
+    @include media-down(md) {
+      font-size: 2rem;
+    }
+
+    @include media-down(sm) {
+      font-size: 1.5rem;
+
+    }
+
+  }
+}

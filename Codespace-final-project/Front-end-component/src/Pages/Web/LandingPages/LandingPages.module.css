@@ -1,0 +1,90 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.container {
+  font-family: "Albert Sans", sans-serif;
+  padding: 1.5rem 1.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.container .buttonsLanding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  width: 7rem;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .container .buttonsLanding {
+    min-width: 2.5em;
+    font-size: 1.6ch;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container .buttonsLanding {
+    min-width: 2.5em;
+    font-size: 1.5ch;
+  }
+}
+.container .buttonsLanding:hover {
+  background-color: #125566;
+  color: white;
+}
+.container h3 {
+  font-size: 1.8rem;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container h3 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container h3 {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container h3 {
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+}
+.container h4 {
+  font-size: 1.7rem;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container h4 {
+    font-size: 1.4rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container h4 {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container h4 {
+    font-size: 0.9rem;
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=LandingPages.module.css.map */

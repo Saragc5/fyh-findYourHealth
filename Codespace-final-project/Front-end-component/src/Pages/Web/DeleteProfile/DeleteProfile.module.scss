@@ -1,0 +1,101 @@
+@import '../../../Variables/Variables.scss';
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.deleteProfile {
+  padding: 1.5rem 1.5rem;
+  height: 80vh;
+  text-align: center;
+  @include flex;
+  flex-direction: column;
+
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+
+    @include media-down(lg) {
+      font-size: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(md) {
+      font-size: 1.3rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(sm) {
+      font-size: 1rem;
+      margin-top: 4rem;
+    }
+
+  }
+
+  .buttonDelete {
+    @include buttonFormStyle;
+    width: 5rem;
+    animation: blink 2.5s infinite;
+
+
+    @include media-down(lg) {
+      font-size: 0.7rem;
+
+    }
+
+    @include media-down(md) {
+      font-size: 0.6rem;
+
+    }
+
+    @include media-down(sm) {
+      font-size: 0.6rem;
+
+    }
+
+  }
+
+  .buttonDelete:hover {
+    color: white;
+    background-color: $newColorBackGrounds;
+  }
+
+  .buttonGoBack {
+    @include buttonFormStyle;
+    width: 10rem;
+
+
+    @include media-down(lg) {
+      font-size: 0.9rem;
+
+    }
+
+    @include media-down(md) {
+      font-size: 0.8rem;
+
+    }
+
+    @include media-down(sm) {
+      font-size: 0.7rem;
+
+    }
+  }
+
+  .buttonGoBack:hover {
+    color: white;
+    background-color: $newColorBackGrounds;
+  }
+}
+
+    

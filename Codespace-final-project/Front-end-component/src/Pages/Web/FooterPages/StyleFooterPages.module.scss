@@ -1,0 +1,28 @@
+@import '../../../Variables/Variables.scss';
+
+.container {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+  margin-top: 2rem;
+  font-family: "Albert Sans", sans-serif;
+
+
+  p {
+    text-align: justify;
+    max-width: 60%;
+    font-size: 1.3em;
+    line-break: normal;
+    text-indent: 2em;
+    white-space: pre-wrap;
+    line-height: 2.5;
+    letter-spacing: 1px;
+
+  }
+
+
+
+}
+
+
+

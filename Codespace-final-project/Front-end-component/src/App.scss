@@ -1,0 +1,20 @@
+@import './Variables/Variables.scss';
+
+html, body{
+  background-color: $backgroundColorGeneral;  
+}
+#root{
+  width: 100%;
+}
+  
+
+.App {
+  text-align: center;   
+  background-color:$backgroundColorGeneral;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+
+
+
+

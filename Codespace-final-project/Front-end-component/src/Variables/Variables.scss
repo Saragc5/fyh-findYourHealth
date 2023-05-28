@@ -1,0 +1,206 @@
+//DISPLAYS:
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@mixin grid{
+  display: grid;
+  place-items: center;
+  justify-items: center;
+}
+
+//COLORS:
+$colorYellowTexts: rgb(216, 198, 5);//letters
+$newColorBackGrounds: #125566;//for navbar, footer, buttons etc
+$newColorBackGroundsLight: #9dcedb;//for navbar, footer, buttons etc
+$newColorbackgroundAqua: rgba(127, 192, 214, 0.996); //navbar and footer
+$newColorbackgroundAqua2: rgba(127, 192, 214, 0.6); //blue buttons
+$newColorbackgroundAqua3: rgba(65, 136, 169, 0.9); //buttons with no backgrounds
+$backgroundColorGeneral:rgba(239, 244, 245, 0.614);
+$backgroundColorForms: rgba(187, 213, 215, 0.207);
+
+
+
+
+//BUTTONS 
+@mixin buttonStyle {
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+   width: 4.4rem;
+   height: 4.4rem;
+   color: $newColorBackGrounds;
+   border-radius: 50%;
+   border: 2px solid $newColorBackGrounds;
+   margin: 1.5rem;
+   margin-left: 0.55rem;
+}
+
+@mixin buttonFormStyle {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    width: 4.4rem;
+    height: 3rem;
+    color: $newColorBackGrounds;
+    border-radius: 10px;
+    border: 2px solid $newColorBackGrounds;
+    margin: 1.5rem;
+    margin-left: 0.55rem;
+    text-align: center;
+    line-height: 2;
+}
+
+
+@mixin buttonNoButtonStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+     border: 5px solid rgba(0, 0, 0, 0);
+     color: $newColorBackGrounds;
+     font-size: 2.3em;
+     font-weight: bold;
+     font-family: 'Satisfy', cursive;
+     margin-top: 1rem;
+     margin-bottom: 4rem;
+     width: 9em;
+
+     @include media-down(lg) {
+      color: $newColorBackGrounds;
+        font-size: 1.7em;
+        width: 5em;
+  
+      }
+
+     @include media-down(md) {
+      color: $newColorBackGrounds;
+         font-size: 1.4em;
+         width: 5em;
+
+     }
+   
+      @include media-down(sm) {  
+        color: $newColorBackGrounds;
+        font-size: 1.2em;
+        width: 5em;
+  
+      }
+
+}
+
+
+//SIZES:
+@mixin sizeCarouselImages{
+  object-fit:cover;
+  width:100%;
+  height:auto;
+}
+
+@mixin sizeInputs{
+  min-height: 3em;
+  min-width:calc(100% / 3);
+  gap: 2em;
+  border-radius: 10px;
+  border: white;
+}
+
+@mixin sizeSelects{
+  min-height: 3em;
+  min-width:calc(100% / 5);
+  gap: 2em;
+  border-radius: 10px;
+  border:2.2px solid grey;
+  margin: 0.5rem;
+}
+@mixin sizeTextArea{
+  min-height: 20em;
+  height: auto;
+  min-width:calc(100% / 3);
+  gap: 2rem;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+@mixin formStyle{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    padding: 1.5rem;      
+   
+    input{
+      
+      min-height: 3em;
+      min-width: 30em;
+      gap: 1.5em;
+    }
+    select{
+      min-height: 3em;
+      min-width: 30em;
+    }
+  }
+
+//MEDIAS 
+  //Breakpoints and media queries:
+  $breakpoints: (
+    xs : 250px,
+    iphone: 415px,//this is not exactly an iphone meassure, it is aproximated
+    sm : 540px,
+    m-small : 648px,
+    mdd : 748px,
+    md : 768px,
+    800 : 800px,
+    ipad: 810px,
+    mmd: 950px,
+    lgg : 974px,
+    lg : 1024px,
+    xlg : 1049px,
+    1050 : 1050px,
+    xl : 1229px,
+    1255 : 1255px,
+    xll: 1560px,
+    xxl: 1700px,
+  );
+ 
+
+     /*Styles just applied to screens width equal o higher than 768px (md) */
+  @mixin media-up($breakpoint){
+    @media only screen and (min-width: map-get($breakpoints, $breakpoint)){
+      @content;
+    };
+  }
+
+
+  /* Styles just applied to screens width equal o higher than 540px (sm) */
+  @mixin media-down($breakpoint){
+    @media only screen and (max-width: map-get($breakpoints, $breakpoint)){
+      @content;
+    };    
+  
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

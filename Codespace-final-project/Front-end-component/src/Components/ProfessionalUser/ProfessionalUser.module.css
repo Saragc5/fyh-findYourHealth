@@ -1,0 +1,200 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.container {
+  display: grid;
+  place-items: center;
+  color: rgb(6, 6, 6);
+}
+.container .header {
+  background-image: url("../../Assets/Images/Headers/food1R.jpg");
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .container .header {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .container .header {
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container .header {
+    height: 115px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .container .header {
+    height: 110px;
+  }
+}
+.container .containerDetails {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  justify-content: justify;
+  width: 75%;
+  height: 98%;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails .detailsName {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .containerDetails .detailsName {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container .containerDetails .detailsName {
+    font-size: 1.5rem;
+  }
+}
+.container .containerDetails .details {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails .details {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .containerDetails .details {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container .containerDetails .details {
+    font-size: 1rem;
+  }
+}
+.container .containerDetails .detailsProfession {
+  font-size: 2rem;
+  color: rgb(216, 198, 5);
+}
+.container .containerDetails img {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 2.5rem;
+  border-radius: 50%;
+  background-color: grey;
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .containerDetails img {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container .containerDetails img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+.container .containerDetails h4 {
+  text-decoration: underline;
+  text-align: center;
+  color: rgb(16, 15, 15);
+  padding-top: 2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails h4 {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails h4 {
+    font-size: 1.3rem;
+  }
+}
+.container .containerDetails .description {
+  color: rgb(16, 15, 15);
+  white-space: pre-line;
+  text-align: justify;
+  padding: 4rem;
+  text-indent: 3rem;
+  width: 100%;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  color: rgb(6, 6, 6);
+}
+@media only screen and (max-width: 1024px) {
+  .container .containerDetails .description {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container .containerDetails .description {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+}
+.container .buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .buttonsContainer .goBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  width: 8rem;
+}
+.container .buttonsContainer .goBack:hover {
+  background-color: #125566;
+  color: white;
+}
+.container .buttonsContainer .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  display: flex;
+  justify-content: space-around;
+  width: 8rem;
+}
+.container .buttonsContainer .contact:hover {
+  background-color: #125566;
+  color: white;
+}/*# sourceMappingURL=ProfessionalUser.module.css.map */

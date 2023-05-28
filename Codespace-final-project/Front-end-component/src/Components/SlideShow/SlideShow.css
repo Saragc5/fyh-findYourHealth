@@ -1,0 +1,12 @@
+/* Estilos que se aplican solo a pantallas con un ancho igual o superior a 768px (md) */
+/* Estilos que se aplican solo a pantallas con un ancho inferior a 540px (sm) */
+.slider-veg {
+  background-color: white;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 45em;
+}/*# sourceMappingURL=SlideShow.css.map */

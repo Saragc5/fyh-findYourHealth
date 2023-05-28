@@ -1,0 +1,379 @@
+@import '../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+
+
+//Display in Home page:
+.slideProfessionals {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 97%;
+
+
+
+    @include media-down(md) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 97%;
+
+    }
+  }
+
+
+  .details {
+
+    width: 20rem;
+    height: auto;
+    border-radius: 10%;
+    font-family: 'Albert Sans', sans-serif;
+    color: $newColorBackGrounds;
+
+    @include media-down(lg) {
+      width: 18rem;
+      height: auto;
+    }
+
+
+    img {
+      border-radius: 10%;
+      width: 70%;
+      height: 60%;
+
+      @include media-down(lg) {
+        width: 65%;
+        height: auto;
+        justify-self: center;
+        object-fit: cover;
+        flex-wrap: wrap;
+      }
+
+      @include media-down(md) {
+        width: 60%;
+        height: auto;
+        justify-self: center;
+        object-fit: cover;
+        flex-wrap: wrap;
+      }
+
+      @include media-down(sm) {
+        width: 50%;
+        height: auto;
+        justify-self: center;
+        object-fit: cover;
+        flex-wrap: wrap;
+      }
+
+
+    }
+
+
+    h4 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+//Display in list of professionals page:
+.filter {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 25rem;
+
+  @include media-down(sm) {
+    width: 70%;
+  }
+}
+
+.filter::placeholder {
+  color: grey;
+}
+
+
+
+.completeList {
+  @include grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: 2fr;
+  grid-gap: 0.3rem;
+  overflow: hidden;
+  height: 17rem;
+
+
+  @include media-down(xll) {
+    height: 15rem auto;
+  }
+
+  @include media-down(xl) {
+    height: 12rem auto;
+  }
+
+  @include media-down(lg) {
+    height: 10rem auto;
+  }
+
+  @include media-down(md) {
+    height: 7rem auto;
+  }
+
+  @include media-down(mmd) {
+    height: 30rem;
+    width: auto;
+  }
+
+  @include media-down(sm) {
+    height: 6rem auto;
+  }
+
+
+  .container {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 80%;
+    list-style: none;
+    overflow: hidden;
+
+
+
+    @include media-down(xll) {
+      height: 15rem auto;
+    }
+
+    @include media-down(xl) {
+      height: 12rem auto;
+    }
+
+    @include media-down(lg) {
+      height: 10rem auto;
+    }
+
+    @include media-down(md) {
+      height: 7rem auto;
+    }
+
+    @include media-down(mmd) {
+      height: auto;
+      @include grid;
+    }
+
+    @include media-down(sm) {
+      height: 6rem auto;
+    }
+
+  }
+
+
+
+
+
+  .linkPerson {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+
+
+    .card {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      background-color: $newColorBackGrounds;
+
+      @include media-down(mmd) {
+        height: 15rem auto;
+        @include grid;
+        width: 15rem;
+      }
+
+      img {
+        width: 33%;
+        height: 16rem;
+        justify-self: center;
+        object-fit: contain;
+        flex-wrap: wrap;
+        margin: 1rem;
+
+
+        @include media-down(xll) {
+          height: 16rem auto;
+        }
+
+        @include media-down(lg) {
+          height: 16rem auto;
+
+        }
+
+        @include media-down(md) {
+          height: auto;
+
+        }
+
+        @include media-down(mmd) {
+          width: 95%;
+          padding-top: 2rem;
+          height: auto;
+          margin: 1rem;
+
+
+        }
+
+        @include media-down(sm) {
+          height: auto;
+
+        }
+
+      }
+
+      .otherDetails {
+        display: grid;
+        text-align: start;
+        justify-content: start;
+        padding-top: 3rem;
+        align-content: start;
+        width: 53%;
+        height: 16rem;
+        color: white;
+        font-family: 'Albert Sans', sans-serif;
+        overflow: hidden;
+        font-size: 12rem;
+
+
+        @include media-down(lg) {
+          padding-left: 1rem;
+        }
+
+        @include media-down(mmd) {
+          padding: 1rem;
+          width: 100%;
+          height: auto;
+
+
+        }
+
+        h2 {
+          //name
+          text-transform: uppercase;
+          font-weight: bolder;
+
+          @include media-down(xll) {
+            font-size: 2rem;
+          }
+
+          @include media-down(xl) {
+            font-size: 1.8rem;
+          }
+
+          @include media-down(lg) {
+            font-size: 1.5rem;
+          }
+
+          @include media-down(md) {
+            font-size: 1.4rem;
+            padding-top: 1rem;
+
+          }
+
+          @include media-down(mmd) {
+            font-size: 1.1rem;
+            width: 100%;
+          }
+
+          @include media-down(sm) {
+            font-size: 1rem aut;
+          }
+        }
+
+        h3 {
+          //profession
+          color: $colorYellowTexts;
+
+          @include media-down(xll) {
+            font-size: 2rem;
+          }
+
+          @include media-down(xl) {
+            font-size: 1.8rem;
+          }
+
+          @include media-down(lg) {
+            font-size: 1.3rem;
+          }
+
+          @include media-down(md) {
+            font-size: 1.2rem;
+          }
+
+          @include media-down(sm) {
+            font-size: 1rem aut;
+          }
+        }
+
+        h4 {
+
+          //speciality
+          @include media-down(xll) {
+            font-size: 1.5rem;
+          }
+
+          @include media-down(xl) {
+            font-size: 1.4rem;
+          }
+
+          @include media-down(lg) {
+            font-size: 1.3rem;
+          }
+
+          @include media-down(md) {
+            font-size: 1.2rem;
+          }
+
+          @include media-down(sm) {
+            font-size: 1rem aut;
+          }
+        }
+
+        h5 {
+
+          //city
+          @include media-down(md) {
+            font-size: 1.1rem;
+          }
+
+          @include media-down(sm) {
+            font-size: 1rem aut;
+          }
+        }
+      }
+    }
+  }
+
+}

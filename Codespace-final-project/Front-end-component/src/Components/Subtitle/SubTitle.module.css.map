@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../Variables/Variables.scss","SubTitle.module.scss","SubTitle.module.css"],"names":[],"mappings":"AAmKK,uEAAA;AAQH,wEAAA;AC1KM,4IAAA;AAER;EACE,aAAA;EACA,wCAAA;ACCF;ADCE;EACE,cDOkB;ECNlB,+BAAA;EACA,iBAAA;ACCJ;AFkKI;ECtKF;IAMI,iBAAA;ECEJ;AACF;AF6JI;ECtKF;IAUI,eAAA;ECGJ;AACF;AFwJI;ECtKF;IAcI,iBAAA;ECIJ;AACF","file":"SubTitle.module.css"}

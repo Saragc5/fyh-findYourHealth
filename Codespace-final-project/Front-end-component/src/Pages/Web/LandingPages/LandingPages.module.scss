@@ -1,0 +1,74 @@
+@import '../../../Variables/Variables.scss';
+
+.container {
+  font-family: 'Albert Sans', sans-serif;
+  padding: 1.5rem 1.5rem;
+  height: 100vh;
+  @include flex;
+  flex-direction: column;
+
+  .buttonsLanding {
+    @include buttonFormStyle;
+    width: 7rem;
+    margin-top: 2rem;
+
+    @include media-down(md) {
+      min-width: 2.5em;
+      font-size: 1.6ch;
+
+    }
+
+    @include media-down(sm) {
+      min-width: 2.5em;
+      font-size: 1.5ch;
+
+    }
+  }
+
+  .buttonsLanding:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+
+    @include media-down(lg) {
+      font-size: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(md) {
+      font-size: 1.3rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(sm) {
+      font-size: 1rem;
+      margin-top: 4rem;
+    }
+
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    margin-top: 4rem;
+
+    @include media-down(lg) {
+      font-size: 1.4rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(md) {
+      font-size: 1.2rem;
+      margin-top: 4rem;
+    }
+
+    @include media-down(sm) {
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+  }
+}

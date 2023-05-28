@@ -1,0 +1,27 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+.containerSubtitle {
+  padding: 4rem;
+  background-color: rgba(186, 209, 212, 0);
+}
+.containerSubtitle h1 {
+  color: #125566;
+  font-family: "Satisfy", cursive;
+  font-size: 2.7rem;
+}
+@media only screen and (max-width: 1024px) {
+  .containerSubtitle h1 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .containerSubtitle h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .containerSubtitle h1 {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=SubTitle.module.css.map */

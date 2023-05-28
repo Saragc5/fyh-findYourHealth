@@ -1,0 +1,379 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+.slideProfessionals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.slideProfessionals .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 97%;
+}
+@media only screen and (max-width: 768px) {
+  .slideProfessionals .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 97%;
+  }
+}
+.slideProfessionals .details {
+  width: 20rem;
+  height: auto;
+  border-radius: 10%;
+  font-family: "Albert Sans", sans-serif;
+  color: #125566;
+}
+@media only screen and (max-width: 1024px) {
+  .slideProfessionals .details {
+    width: 18rem;
+    height: auto;
+  }
+}
+.slideProfessionals .details img {
+  border-radius: 10%;
+  width: 70%;
+  height: 60%;
+}
+@media only screen and (max-width: 1024px) {
+  .slideProfessionals .details img {
+    width: 65%;
+    height: auto;
+    justify-self: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slideProfessionals .details img {
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .slideProfessionals .details img {
+    width: 50%;
+    height: auto;
+    justify-self: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    flex-wrap: wrap;
+  }
+}
+.slideProfessionals .details h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.filter {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  width: 25rem;
+}
+@media only screen and (max-width: 540px) {
+  .filter {
+    width: 70%;
+  }
+}
+
+.filter::-moz-placeholder {
+  color: grey;
+}
+
+.filter::placeholder {
+  color: grey;
+}
+
+.completeList {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  grid-template-columns: 2fr;
+  grid-gap: 0.3rem;
+  overflow: hidden;
+  height: 17rem;
+}
+@media only screen and (max-width: 1560px) {
+  .completeList {
+    height: 15rem auto;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .completeList {
+    height: 12rem auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList {
+    height: 10rem auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList {
+    height: 7rem auto;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .completeList {
+    height: 30rem;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList {
+    height: 6rem auto;
+  }
+}
+.completeList .container {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 80%;
+  list-style: none;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1560px) {
+  .completeList .container {
+    height: 15rem auto;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .completeList .container {
+    height: 12rem auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .container {
+    height: 10rem auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .container {
+    height: 7rem auto;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .completeList .container {
+    height: auto;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .container {
+    height: 6rem auto;
+  }
+}
+.completeList .linkPerson {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+}
+.completeList .linkPerson .card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  background-color: #125566;
+}
+@media only screen and (max-width: 950px) {
+  .completeList .linkPerson .card {
+    height: 15rem auto;
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    width: 15rem;
+  }
+}
+.completeList .linkPerson .card img {
+  width: 33%;
+  height: 16rem;
+  justify-self: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+@media only screen and (max-width: 1560px) {
+  .completeList .linkPerson .card img {
+    height: 16rem auto;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .linkPerson .card img {
+    height: 16rem auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .linkPerson .card img {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .completeList .linkPerson .card img {
+    width: 95%;
+    padding-top: 2rem;
+    height: auto;
+    margin: 1rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .linkPerson .card img {
+    height: auto;
+  }
+}
+.completeList .linkPerson .card .otherDetails {
+  display: grid;
+  text-align: start;
+  justify-content: start;
+  padding-top: 3rem;
+  align-content: start;
+  width: 53%;
+  height: 16rem;
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  overflow: hidden;
+  font-size: 12rem;
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .linkPerson .card .otherDetails {
+    padding-left: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .completeList .linkPerson .card .otherDetails {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+}
+.completeList .linkPerson .card .otherDetails h2 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 1560px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 1.1rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .linkPerson .card .otherDetails h2 {
+    font-size: 1rem aut;
+  }
+}
+.completeList .linkPerson .card .otherDetails h3 {
+  color: rgb(216, 198, 5);
+}
+@media only screen and (max-width: 1560px) {
+  .completeList .linkPerson .card .otherDetails h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .completeList .linkPerson .card .otherDetails h3 {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .linkPerson .card .otherDetails h3 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .linkPerson .card .otherDetails h3 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .linkPerson .card .otherDetails h3 {
+    font-size: 1rem aut;
+  }
+}
+@media only screen and (max-width: 1560px) {
+  .completeList .linkPerson .card .otherDetails h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .completeList .linkPerson .card .otherDetails h4 {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .completeList .linkPerson .card .otherDetails h4 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .linkPerson .card .otherDetails h4 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .linkPerson .card .otherDetails h4 {
+    font-size: 1rem aut;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .completeList .linkPerson .card .otherDetails h5 {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .completeList .linkPerson .card .otherDetails h5 {
+    font-size: 1rem aut;
+  }
+}/*# sourceMappingURL=ListProfessionals.module.css.map */

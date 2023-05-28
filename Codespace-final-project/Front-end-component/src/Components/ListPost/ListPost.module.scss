@@ -1,0 +1,313 @@
+ @import '../../Variables/Variables.scss';
+
+ //This is forsection= Home
+ .container {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 2rem;
+     text-decoration: none;
+
+
+
+
+     .link {
+         list-style: none;
+         text-decoration: none;
+         width: 30%;
+         min-width: 390px;
+         height: 25rem;
+         overflow: hidden;
+
+
+         .cardContainer {
+             width: 100%;
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-content: space-between;
+             align-items: center;
+             gap: 1rem;
+
+
+
+             img {
+                 width: 100%;
+                 height: auto;
+                 max-height: 70%;
+                 justify-self: center;
+
+
+
+             }
+
+             h3 {
+                 text-transform: uppercase;
+                 font-family: 'Albert Sans', sans-serif;
+                 color: $newColorBackGrounds;
+                 font-weight: bolder;
+                 font-size: 95%;
+                 text-decoration: none;
+                 width: 90%;
+                 max-height: 20%;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+
+             }
+
+
+         }
+     }
+
+ }
+
+ .seeMore {
+
+     background-color: rgba(0, 0, 0, 0);
+     border: 5px solid rgba(0, 0, 0, 0);
+     color: $newColorBackGrounds;
+     font-size: 2.3em;
+     font-weight: bold;
+     font-family: 'Satisfy', cursive;
+     margin-top: 1rem;
+     margin-bottom: 4rem;
+     width: 9em;
+
+     @include media-down(lg) {
+         color: rgb(65, 136, 169);
+         font-size: 1.7em;
+         width: 5em;
+
+     }
+
+     @include media-down(md) {
+         color: rgb(65, 136, 169);
+         font-size: 1.4em;
+         width: 5em;
+
+     }
+
+     @include media-down(sm) {
+         color: rgb(65, 136, 169);
+         font-size: 1.2em;
+         width: 5em;
+
+     }
+
+ }
+
+ .seeMore:hover {
+     color: $colorYellowTexts;
+ }
+
+
+ //This is for section= Blog
+ .labelFilter {
+     color: white;
+
+ }
+
+ .filter {
+     border-radius: 10px;
+     margin-bottom: 1rem;
+     margin-left: 1rem;
+     width: 30rem;
+
+     @include media-down(sm) {
+         width: 80%;
+     }
+
+ }
+
+ .filter::placeholder {
+     color: rgb(66, 64, 64);
+     font-family: 'Albert Sans', sans-serif;
+
+
+ }
+
+
+ .container2 {
+     @include grid;
+     display: inline-block;
+     width: 100%;
+     height: auto;
+     align-self: center;
+     list-style: none;
+     overflow: hidden;
+
+
+
+     @include media-down(xxl) {
+         @include grid;
+         display: inline-block;
+         width: 100%;
+         height: auto;
+
+
+
+     }
+
+     @include media-down(xl) {
+         @include grid;
+         display: inline-block;
+         width: 100%;
+         height: auto;
+
+     }
+
+     @include media-down(lg) {
+         @include grid;
+         display: inline-block;
+         width: 100%;
+         height: auto;
+
+     }
+
+
+     .listOfArticles {
+         @include grid;
+         display: inline-block;
+         width: 65%;
+         height: 98%;
+         list-style: none;
+         background-color: rgba(243, 237, 237, 0.35);
+         overflow: hidden;
+         grid-gap: 1rem;
+
+
+         @include media-down(xxl) {
+             @include grid;
+             display: inline-block;
+             width: 65%;
+             height: auto;
+
+
+         }
+
+
+
+         .articles {
+             @include grid;
+             width: 98%;
+             height: auto;
+             overflow: hidden;
+             grid-gap: 1rem;
+
+
+
+             @include media-down(xxl) {
+                 @include grid;
+                 width: 100%;
+                 height: auto;
+                 grid-gap: 1rem;
+
+
+             }
+
+
+
+             img {
+
+                 width: 60%;
+                 height: auto;
+                 width: 50vw;
+                 height: 50vw;
+                 justify-self: center;
+                 max-width: 100%;
+                 height: auto;
+                 object-fit: contain;
+
+             }
+
+             h4 {
+                 font-family: 'Albert Sans', sans-serif;
+                 font-size: 1rem;
+                 place-self: right;
+                 color: black;
+                 width: 80%;
+
+
+
+             }
+
+
+             .articleTitle {
+                 text-transform: uppercase;
+                 font-family: 'Albert Sans', sans-serif;
+                 color: rgb(4, 4, 5);
+                 font-weight: light;
+                 font-size: 1.9em;
+                 font-weight: bolder;
+                 width: 90%;
+                 height: 2rem;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+
+                 @include media-down(xl) {
+                     font-size: 1.4rem;
+                 }
+
+                 @include media-down(md) {
+                     font-size: 1.1rem;
+                 }
+
+
+             }
+
+             p.paragraphArticle {
+
+                 width: 80%;
+                 height: auto;
+                 font-size: 1.3rem;
+                 display: -webkit-box;
+                 -webkit-box-orient: vertical;
+                 -webkit-line-clamp: 3; // Stablish number of lines to show
+                 overflow: hidden;
+                 color: rgb(4, 4, 5);
+                 text-overflow: ellipsis;
+                 white-space: normal; // Resets the white space setting to its default value so line breaks are possible
+                 margin-bottom: 1rem;
+                 text-align: justify;
+                 font-family: 'Albert Sans', sans-serif;
+
+                 @include media-down(xl) {
+                     font-size: 1.2rem;
+                 }
+
+                 @include media-down(md) {
+                     font-size: 0.9rem;
+                 }
+
+
+
+
+             }
+
+             .dateOfPublish {
+                 border: 3px solid rgba(255, 0, 0, 0);
+                 height: 1rem;
+                 color: rgb(4, 4, 5);
+                 margin-bottom: 1rem;
+
+
+             }
+
+             .paragraphArticle:first-letter {
+                 text-transform: uppercase;
+             }
+
+             .paragraphArticle:first-letter {
+                 text-transform: uppercase;
+             }
+         }
+
+
+     }
+ }
+  

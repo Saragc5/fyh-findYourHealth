@@ -1,0 +1,66 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Carter+One&family=Just+Another+Hand&family=Nothing+You+Could+Do&display=swap");
+.footerPages {
+  background-color: rgba(127, 192, 214, 0.996);
+  background-color: #125566;
+  font-family: "Nothing You Could Do", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 5rem;
+  min-width: 100px;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 1024px) {
+  .footerPages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.1px;
+  }
+}
+.footerPages .linkPages {
+  display: inline-block;
+}
+.footerPages .linkPages .links {
+  color: white;
+  margin: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1024px) {
+  .footerPages .linkPages .links {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footerPages .linkPages .links {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+  }
+}
+.footerPages .icons {
+  display: inline-block;
+}
+.footerPages .icons span {
+  color: white;
+  margin: 1rem;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 1024px) {
+  .footerPages .icons span {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

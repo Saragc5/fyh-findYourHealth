@@ -1,0 +1,69 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  padding: 1rem;
+}
+.article .imageArticle {
+  max-width: 80%;
+  height: auto;
+}
+.article .titleArticle {
+  font-size: 30px;
+  color: rgb(6, 6, 6);
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.article .textArticle {
+  font-size: 5rem;
+  text-align: justify;
+  padding: 5rem;
+  text-indent: 3rem;
+  max-width: 100%;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: rgb(6, 6, 6);
+  white-space: pre-line;
+  width: 90%;
+  margin-left: 5rem;
+}
+.article .textArticle:first-letter {
+  text-transform: uppercase;
+}
+.article .published {
+  color: rgb(81, 77, 77);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.buttons .goBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  width: 7rem;
+}
+.buttons .goBack:hover {
+  background-color: #125566;
+  color: white;
+}/*# sourceMappingURL=Article.module.css.map */

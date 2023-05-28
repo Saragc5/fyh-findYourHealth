@@ -1,0 +1,60 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+.containerButtonsPageHomeListProf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: none;
+}
+.containerButtonsPageHomeListProf .buttonPag {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #125566;
+  border-radius: 50%;
+  border: 2px solid #125566;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .containerButtonsPageHomeListProf .buttonPag {
+    display: none;
+  }
+}
+.containerButtonsPageHomeListProf .buttonPag:hover {
+  background-color: #125566;
+  color: white;
+}
+.containerButtonsPageHomeListProf .buttonPagSeeAll {
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  color: rgb(233, 228, 228);
+  color: #125566;
+  border-radius: 50%;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+}
+@media only screen and (max-width: 768px) {
+  .containerButtonsPageHomeListProf .buttonPagSeeAll {
+    display: none;
+  }
+}
+.containerButtonsPageHomeListProf .buttonPagSeeAll:hover {
+  background-color: #125566;
+  color: white;
+}
+.containerButtonsPageHomeListProf .active {
+  background-color: rgba(239, 244, 245, 0.614);
+}
+.containerButtonsPageHomeListProf .missingButtons {
+  display: none;
+}/*# sourceMappingURL=PaginationHomeListProf.module.css.map */

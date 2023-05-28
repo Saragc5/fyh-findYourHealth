@@ -1,0 +1,1132 @@
+@import '../../../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Carter+One&family=Nothing+You+Could+Do&display=swap");
+
+
+.loading {
+  min-height: 80vh;
+  margin: 5rem;
+  @include flex;
+  flex-direction: column;
+
+}
+
+.reset {
+  @include buttonFormStyle;
+}
+
+.reset:hover {
+  background-color: $newColorBackGrounds;
+  color: white;
+
+}
+
+
+
+.containerProfile {
+  @include flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  gap: 1.7rem;
+
+  .headerAdmin {
+    background-image: url("../../../../Assets/Images/Headers/cabecProfile.jpg");
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+  }
+
+  .header {
+    background-color: grey;
+    background-image: url("../../../../Assets/Images/Headers/cabecProfile.jpg");
+    background-size: 100%;
+    height: 400px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 50% 100%, 0 50%);
+    position: relative;
+    margin-bottom: 12rem;
+
+    @include media-down(xll) {
+      margin-bottom: 8rem;
+    }
+
+    @include media-down(mmd) {
+      height: 350px;
+    }
+
+    .headerName {
+      text-align: center;
+      align-self: center;
+      height: 200px;
+
+
+    }
+
+  }
+
+
+  .profileForm {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100rem;
+    min-width: auto;
+    max-height: 100%;
+    min-height: auto;
+    border-radius: 10px;
+    height: auto;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include media-down(xll) {
+      margin-top: 3rem;
+
+    }
+
+    @include media-down(lgg) {
+      margin-top: 4rem;
+
+    }
+
+    @include media-down(ipad) {
+      margin-top: 2rem;
+
+    }
+
+    @include media-down(iphone) {
+      margin-top: 0;
+
+    }
+
+
+
+    .headerForm {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2; // z-index to put the content above the header image
+      margin-top: 3rem;
+
+      @include media-down(xll) {
+        top: 45%;
+        left: 50%;
+
+      }
+
+
+
+      .containerImage {
+        width: 30%;
+        height: auto;
+        overflow: hidden;
+
+        @include media-down(lg) {
+          width: 30.5%;
+          height: auto;
+
+        }
+
+        @include media-down(mmd) {
+          width: 32.7%;
+
+        }
+
+        @include media-down(mdd) {
+          width: 33.2%;
+
+        }
+
+        @include media-down(sm) {
+          width: 33%;
+
+        }
+
+        @include media-down(iphone) {
+          width: 38%;
+
+        }
+
+
+
+        img {
+          border-radius: 50%;
+          width: 80%;
+          height: auto;
+
+          @include media-down(xl) {
+            width: 80%;
+          }
+
+          @include media-down(lg) {
+            width: 85%;
+          }
+
+          @include media-down(mmd) {
+            width: 90%;
+          }
+
+          @include media-down(mdd) {
+            width: 90%;
+          }
+
+          @include media-down(sm) {
+            width: 100%;
+          }
+        }
+      }
+
+      .customFileUpload {
+        display: inline-block;
+        padding: 6px 12px;
+        cursor: pointer;
+        background-color: rgba(98, 64, 64, 0);
+        color: grey;
+        border-radius: 4px;
+        font-family: 'Albert Sans', sans-serif;
+        align-self: left;
+
+      }
+
+      .customFileUpload:hover {
+        background-color: $newColorBackGroundsLight;
+      }
+
+      .customFileUpload i {
+        margin-right: 5px;
+      }
+
+      .uploadDefault {
+        display: none;
+      }
+
+
+    }
+
+    .containerButtonsEditProfile {
+
+      @include grid;
+      grid-row-gap: 0;
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr;
+      width: 75%;
+      height: auto;
+      overflow: hidden;
+      justify-content: end;
+
+
+      @include media-down(xl) {
+        width: 80%;
+      }
+
+      @include media-down(lg) {
+        width: 81%;
+      }
+
+      @include media-down(ipad) {
+        width: 83%;
+      }
+
+      @include media-down(iphone) {
+        width: 97%;
+      }
+
+
+
+
+
+      .edit {
+        @include buttonFormStyle;
+        margin: 0;
+        justify-self: end;
+        width: 3rem;
+        height: 2.6rem;
+
+
+
+
+        @include media-down(xl) {
+          width: 2.5rem;
+          height: 1.8rem;
+
+        }
+
+        @include media-down(lg) {
+          width: 2.2rem;
+          height: 1.7rem;
+        }
+
+
+      }
+
+      .edit:hover {
+        background-color: $newColorBackGrounds;
+        color: white;
+      }
+
+      .disabledEdit {
+        display: none;
+      }
+
+
+      .cancelEdit {
+        @include buttonFormStyle;
+        margin: 0;
+        justify-self: end;
+        justify-content: center;
+        align-content: center;
+        width: 3rem;
+        height: 2.6rem;
+
+        @include media-down(xl) {
+          width: 2.5rem;
+          height: 1.8rem;
+
+        }
+
+        @include media-down(lg) {
+          width: 2.2rem;
+          height: 1.7rem;
+        }
+
+        @include media-down(md) {
+          width: 2rem;
+          height: 1.7rem;
+        }
+      }
+
+      .cancelEdit:hover {
+        background-color: $newColorBackGrounds;
+        color: white;
+      }
+
+      .disabledCancelEdit {
+        display: none;
+      }
+
+    }
+
+
+
+    .bodyProfile {
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-items: center;
+      align-self: center;
+      flex-direction: column;
+      gap: 0.1em;
+      width: 50%;
+      height: 100%;
+      font-size: 1.1rem;
+      background-color: $newColorBackGrounds;
+      padding-top: 0.5rem;
+
+
+      @include media-down(xl) {
+        width: 62%;
+      }
+
+      @include media-down(1050) {
+        width: 62%;
+      }
+
+      @include media-down(mmd) {
+        width: 65%;
+      }
+
+      @include media-down(iphone) {
+        width: 95%;
+        height: 100%;
+      }
+
+
+
+
+      .blockDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        width: 100%;
+        height: 2.9rem;
+        color: white;
+
+
+
+        .labelDB {
+          @include sizeInputs;
+          display: flex;
+          justify-content: center;
+          width: 45%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          padding-left: 2rem;
+          height: 100%;
+          font-size: 1.2rem;
+
+
+
+          @include media-down(xll) {
+            display: flex;
+            padding-right: 1rem;
+            height: 0.5rem;
+            font-size: 1.1rem;
+
+          }
+
+          @include media-down(lg) {
+            font-size: 1rem;
+          }
+
+          @include media-down(1050) {
+            display: none;
+          }
+
+        }
+
+        .labelDBClicked {
+          //clicked for editing
+          @include sizeInputs;
+          display: flex;
+          justify-content: flex-start;
+          width: 25%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          padding-left: 2rem;
+          height: 100%;
+          font-size: 1rem;
+
+          @include media-down(1050) {
+            display: none;
+          }
+
+          @include media-down(iphone) {
+            display: none;
+          }
+
+        }
+
+
+
+
+
+        .detailsDB {
+          @include sizeInputs;
+          display: flex;
+          justify-content: flex-start;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          padding-left: 2rem;
+          height: 100%;
+          font-size: 1.2rem;
+          color: white;
+
+
+
+          @include media-down(xll) {
+            display: flex;
+            padding-right: 1rem;
+            height: 0.5rem;
+            font-size: 1.1rem;
+
+          }
+
+          @include media-down(lg) {
+            font-size: 1rem;
+          }
+
+
+          @include media-down(1050) {
+
+            min-width: 100%;
+            justify-content: center;
+          }
+
+          @include media-down(sm) {
+
+            font-size: 0.8rem;
+
+          }
+
+
+
+        }
+
+        .detailsDBClicked {
+          //clicked for editing
+          @include sizeInputs;
+          display: flex;
+          justify-content: flex-start;
+          width: 25%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          height: 100%;
+          font-size: 1rem;
+
+
+          @include media-down(lg) {
+            font-size: 1rem;
+          }
+
+          @include media-down(mdd) {
+            font-size: 0.9rem;
+            width: 35%;
+            word-wrap: break-word;
+            word-break: break-all;
+          }
+
+          @include media-down(ipad) {
+            font-size: 0.9rem;
+            width: 35%;
+            word-wrap: break-word;
+            word-break: break-all;
+          }
+
+          @include media-down(sm) {
+            justify-content: flex-start;
+            padding: 0;
+            font-size: 0.8rem;
+            width: 25%;
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            height: 0.3rem;
+            width: 100%;
+            justify-content: center;
+
+          }
+
+        }
+
+
+
+        .input {
+
+
+          @include sizeInputs;
+          display: flex;
+          justify-content: flex-start;
+          color: white;
+          width: 25%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          font-size: 1.2rem;
+          background-color: rgba(126, 196, 202, 0.08);
+
+
+          @include media-down(lg) {
+            font-size: 1rem;
+
+          }
+
+          @include media-down(m-small) {
+            font-size: 0.9rem;
+
+          }
+
+          @include media-down(sm) {
+            width: 50%;
+            height: 10%;
+
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            height: 0.3rem;
+            width: 100%;
+
+          }
+
+
+        }
+
+        input::placeholder {
+          color: #837f7f;
+          text-align: center;
+          font-size: 0.8rem;
+
+
+
+        }
+
+        .inputActive {
+          background-color: aliceblue;
+        }
+
+        .textarea {
+          min-height: 6em;
+          min-width: calc(100% / 55);
+          min-width: 80%;
+          border: white;
+          gap: 2em;
+          border-radius: 10px;
+          background-color: rgba(126, 196, 202, 0.08);
+          color: white;
+
+          @include media-down(lg) {
+            font-size: 1rem;
+
+          }
+
+          @include media-down(m-small) {
+            font-size: 0.9rem;
+
+          }
+
+          @include media-down(sm) {
+            width: 50%;
+            height: 10%;
+
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            height: 0.3rem;
+            width: 100%;
+
+          }
+
+
+        }
+
+        textarea::placeholder {
+          color: #837f7f;
+          text-align: center;
+          font-size: 0.8rem;
+        }
+
+        .textareaActive {
+          background-color: aliceblue
+        }
+
+        .disabledArea {
+          display: none,
+        }
+
+        .disabled {
+          display: none,
+        }
+
+        .editPassword {
+          //edit password button just displayed when clicked to edit profile
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3rem;
+          height: 2rem;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+
+
+          @include media-down(xl) {
+            width: 2.4rem;
+            height: 1.7rem;
+
+          }
+
+          @include media-down(lg) {
+            width: 2.1rem;
+            height: 1.6rem;
+          }
+        }
+
+        .editPassword:hover {
+          background-color: $newColorBackGrounds;
+          color: white;
+        }
+
+        .disabledEditPassword {
+          display: none;
+        }
+
+        .inputPassword {
+
+          width: 25%;
+          height: 100%;
+          border: white;
+          background-color: rgba(126, 196, 202, 0.08);
+          background-color: $newColorBackGrounds;
+          opacity: 0.5;
+          cursor: not-allowed;
+          pointer-events: none;
+
+          @include media-down(xxl) {
+            width: 22%;
+          }
+
+          @include media-down(xll) {
+            width: 22%;
+          }
+
+          @include media-down(xl) {
+            width: 15%;
+          }
+
+
+          @include media-down(sm) {
+            width: 18%;
+          }
+
+          @include media-down(iphone) {
+            width: 10%;
+
+          }
+
+
+        }
+
+        .select {
+          min-height: 3em;
+          min-width: 30em;
+          color: white;
+
+
+          .options {
+
+            value {
+              @include media-down(lg) {
+                font-size: 1rem;
+              }
+
+
+
+              @include media-down(sm) {
+
+                font-size: 0.8rem;
+
+              }
+
+              @include media-down(iphone) {
+
+                font-size: 0.8rem;
+                text-align: center
+              }
+
+
+
+            }
+          }
+        }
+      }
+
+      .blockDetailsClickedIphone {
+        @include media-down(iphone) {
+          //when editing in size iphone, it turns to grid
+          @include grid;
+          height: 6rem;
+          gap: 0;
+          color: white;
+          width: 100%;
+
+        }
+
+        .labelDBClickedIphone {
+          display: none;
+        }
+
+        .detailsDBClickedIphone {
+          @include sizeInputs;
+          display: flex;
+          justify-content: flex-start;
+          width: 25%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          height: 100%;
+          font-size: 1rem;
+
+          @include media-down(lg) {
+            font-size: 1rem;
+          }
+
+          @include media-down(mdd) {
+            font-size: 0.9rem;
+            width: 35%;
+            word-wrap: break-word;
+            word-break: break-all;
+          }
+
+          @include media-down(sm) {
+            justify-content: flex-start;
+            padding: 0;
+            font-size: 0.8rem;
+            width: 25%;
+          }
+
+          @include media-down(iphone) {
+            height: 0.3rem;
+            width: 100%;
+            justify-content: center;
+            gap: 0;
+
+          }
+
+        }
+
+        .inputClickedIphone {
+
+
+
+          display: flex;
+          justify-content: flex-start;
+          color: white;
+          width: 90%;
+          text-align: left;
+          height: 100%;
+          margin-bottom: 15px;
+          border-radius: 10px;
+          border: white;
+          font-size: 0.8rem;
+          background-color: rgba(126, 196, 202, 0.08);
+        }
+
+        .inputClickedIphone::placeholder {
+          color: #837f7f;
+          text-align: center;
+          font-size: 0.9rem;
+
+
+
+        }
+
+        .editPasswordClickedIphone {
+          //edit password button just displayed when clicked to edit profile
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3rem;
+          height: 2rem;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+
+
+
+        }
+
+
+        .disabledEditPassword {
+          display: none;
+        }
+
+        .inputPasswordClickedIphone {
+
+          width: 25%;
+          height: 100%;
+          border: white;
+          background-color: rgba(126, 196, 202, 0.08);
+          background-color: $newColorBackGrounds;
+          opacity: 0.5;
+          cursor: not-allowed;
+          pointer-events: none;
+
+
+
+        }
+
+
+
+      }
+
+
+
+      .blockDetailsDescription {
+        label {
+          font-size: 1.2rem;
+          color: white;
+          margin-right: 2.5rem;
+
+          @include media-down(lgg) {
+            font-size: 1rem;
+          }
+
+          @include media-down(sm) {
+            font-size: 0.8rem;
+          }
+
+          @include media-down(xs) {
+            font-size: 0.5rem;
+          }
+
+          @include media-down(iphone) {
+            display: none;
+          }
+
+        }
+
+        .description {
+          text-align: justify;
+          text-indent: 2rem;
+          padding: 1rem;
+          white-space: pre-line;
+          overflow: hidden;
+          color: white;
+
+
+          @include media-down(lg) {
+            font-size: 1rem;
+            padding: 0.7rem;
+
+          }
+
+
+          @include media-down(sm) {
+            font-size: 0.8rem;
+            padding: 0.65rem;
+
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            padding: 1rem;
+
+          }
+        }
+
+        .descriptionClicked {
+          text-align: justify;
+          text-indent: 2rem;
+          padding: 1rem;
+          white-space: pre-line;
+          overflow: hidden;
+          color: white;
+          background-color: $newColorBackGrounds;
+
+
+          @include media-down(lg) {
+            font-size: 1rem;
+            padding: 0.7rem;
+
+          }
+
+
+          @include media-down(sm) {
+            font-size: 0.8rem;
+            padding: 0.65rem;
+
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+          }
+        }
+
+        .textarea {
+          min-height: 6em;
+          min-width: 80%;
+          border: white;
+          gap: 2em;
+          border-radius: 10px;
+          background-color: rgba(126, 196, 202, 0.08);
+          color: white;
+
+        }
+
+        textarea::placeholder {
+          color: #837f7f;
+          text-align: center;
+          font-size: 0.8rem;
+        }
+
+        .textareaActive {
+          background-color: aliceblue
+        }
+
+        .disabledArea {
+          display: none,
+        }
+      }
+
+      .blockDetailsDescriptionClickedIphone {
+        label {
+          @include media-down(iphone) {
+            display: none;
+          }
+        }
+
+        @include media-down(iphone) {
+          //for when editing in iphone size, it turns to grid
+          @include grid;
+          height: 10rem;
+          gap: 0;
+          color: white;
+          width: 100%;
+          font-size: 0.5rem;
+
+        }
+
+        .descriptionClickedIphone {
+          text-align: justify;
+          text-indent: 2rem;
+          padding: 1rem;
+          white-space: pre-line;
+          overflow: hidden;
+          color: white;
+          margin-top: 2.5rem;
+          margin-bottom: 2.5rem;
+
+          @include media-down(lg) {
+            font-size: 1rem;
+            padding: 0.7rem;
+
+          }
+
+
+          @include media-down(sm) {
+            font-size: 0.8rem;
+            padding: 0.65rem;
+
+          }
+
+          @include media-down(iphone) {
+            font-size: 0.8rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+          }
+
+        }
+
+        .textareaClickedIphone {
+          min-height: 5em;
+          min-width: calc(100% / 55);
+          min-width: 90%;
+          height: 3rem;
+          border: white;
+          gap: 2em;
+          border-radius: 10px;
+          background-color: rgba(126, 196, 202, 0.08);
+          color: white;
+          font-size: 0.8rem;
+          margin-bottom: 5.5rem;
+
+
+
+        }
+
+        textarea::placeholder {
+          color: #837f7f;
+          text-align: center;
+          font-size: 0.8rem;
+        }
+
+        .textareaActive {
+          background-color: aliceblue
+        }
+
+        .disabledArea {
+          display: none,
+        }
+      }
+    }
+  }
+
+  .writeNewArticle {
+    @include buttonNoButtonStyle;
+    margin-bottom: 0;
+
+    @include media-down(lgg) {
+      color: $newColorBackGrounds;
+      font-size: 1.7em;
+      width: 12em;
+
+    }
+
+    @include media-down(md) {
+      color: $newColorBackGrounds;
+      font-size: 1.4em;
+      width: 5em;
+
+    }
+
+    @include media-down(1050) {
+      color: $newColorBackGrounds;
+      font-size: 1.7em;
+      width: 12em;
+
+    }
+
+    @include media-down(sm) {
+      color: $newColorBackGrounds;
+      font-size: 1.3em;
+      width: 12em;
+
+    }
+
+  }
+
+  .writeNewArticle:hover {
+    color: $colorYellowTexts;
+  }
+
+
+  .save {
+    @include buttonFormStyle;
+    width: 5rem;
+
+    @include media-down(md) {
+      width: 4.5rem;
+      font-size: 1.3rem;
+
+
+    }
+
+    @include media-down(mdd) {
+      width: 3.5rem;
+      font-size: 1.2rem;
+
+
+    }
+
+    @include media-down(sm) {
+      width: 2.8rem;
+      font-size: 1.1rem;
+
+
+    }
+  }
+
+  .save:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+}
+
+
+
+
+
+
+

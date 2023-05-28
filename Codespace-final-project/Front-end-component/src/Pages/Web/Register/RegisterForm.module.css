@@ -1,0 +1,114 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 0.5rem;
+  min-height: 98vh;
+  width: 100%;
+}
+.registerForm input {
+  min-height: 3em;
+  min-width: 30em;
+  gap: 1.5em;
+}
+.registerForm select {
+  min-height: 3em;
+  min-width: 30em;
+}
+.registerForm input {
+  min-height: 3em;
+  min-width: 33.3333333333%;
+  gap: 2em;
+  border-radius: 10px;
+  border: white;
+  border: 0.5px solid rgb(205, 203, 203);
+}
+.registerForm input::-moz-placeholder {
+  color: grey;
+}
+.registerForm input::placeholder {
+  color: grey;
+}
+.registerForm .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+  width: 4.4rem;
+  height: 3rem;
+  color: #125566;
+  border-radius: 10px;
+  border: 2px solid #125566;
+  margin: 1.5rem;
+  margin-left: 0.55rem;
+  text-align: center;
+  line-height: 2;
+  width: 7rem;
+}
+.registerForm .submit:hover {
+  background-color: #125566;
+  color: white;
+}
+.registerForm select {
+  min-height: 3em;
+  min-width: 20%;
+  gap: 2em;
+  border-radius: 10px;
+  border: 2.2px solid grey;
+  margin: 0.5rem;
+  background-color: rgba(236, 232, 232, 0);
+  border: 1px solid rgb(183, 181, 181);
+  font-family: "Albert Sans", sans-serif;
+  color: grey;
+}
+.registerForm select option {
+  color: grey;
+}
+.registerForm .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0);
+  color: #125566;
+  font-size: 2.3em;
+  font-weight: bold;
+  font-family: "Satisfy", cursive;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  width: 9em;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .registerForm .login {
+    color: #125566;
+    font-size: 1.7em;
+    width: 5em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .registerForm .login {
+    color: #125566;
+    font-size: 1.4em;
+    width: 5em;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .registerForm .login {
+    color: #125566;
+    font-size: 1.2em;
+    width: 5em;
+  }
+}
+.registerForm .login:hover {
+  color: rgb(216, 198, 5);
+}
+.registerForm .optionsText {
+  color: white;
+}/*# sourceMappingURL=RegisterForm.module.css.map */

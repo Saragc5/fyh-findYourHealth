@@ -1,0 +1,80 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.profileDropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+}
+.profileDropdown .dropdownTrigger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: rgb(216, 198, 5);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.profileDropdown .dropdownTrigger i {
+  margin-left: 6px;
+  border: rgb(216, 198, 5);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+.profileDropdown .dropdownTrigger:hover i {
+  transform: rotate(-135deg);
+}
+.profileDropdown:hover .dropdownTrigger {
+  color: #000;
+}
+.profileDropdown .dropdownContent {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: -18px;
+  background-color: #fff;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 10px;
+}
+.profileDropdown .dropdownContent .links {
+  display: block;
+  padding: 8px 12px;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+}
+.profileDropdown .dropdownContent .links:hover {
+  background-color: #125566;
+  color: rgb(216, 198, 5);
+  transition: background-color 0.2s ease-in-out;
+}
+.profileDropdown .dropdownContent .logout {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: transparent;
+  color: #000;
+  font-size: 22px;
+  border: none;
+  text-align: left;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.profileDropdown .dropdownContent .logout:hover {
+  background-color: #125566;
+  color: rgb(216, 198, 5);
+  transition: background-color 0.2s ease-in-out;
+}
+.profileDropdown:hover .dropdownContent {
+  display: block;
+}/*# sourceMappingURL=CustomDropdown.module.css.map */

@@ -1,0 +1,36 @@
+@import '../../../Variables/Variables.scss';
+
+.newArticle {
+  @include formStyle;
+  gap: 0.5rem;
+  min-height: 80vh;
+
+  h3 {
+    @include h3Styles;
+  }
+
+  .linkBtn {
+    background-color: $backgroundColorForms;
+    border: $backgroundColorForms;
+    width: 200px;
+  }
+
+  input {
+    @include sizeInputs;
+  }
+
+  .submit {
+    width: 100px;
+  }
+
+  select {
+    @include sizeSelects;
+  }
+
+  .login {
+    background-color: $backgroundColorForms;
+    border: $backgroundColorForms;
+    width: 200px;
+  }
+
+}

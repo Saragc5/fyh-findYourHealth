@@ -1,0 +1,88 @@
+@import '../../../Variables/Variables.scss';
+
+.whoContainer {
+  @include grid;
+  width: 100%;
+  text-align: center;
+
+  .header {
+    background-image: url("../../../Assets/Images/Headers/food1.jpg");
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+
+    @include media-down(mmd) {
+      height: 150px;
+
+    }
+
+  }
+
+
+  .cardPresentation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 70%;
+    height: 70%;
+
+
+    @include media-down(md) {
+      gap: 3rem;
+      width: 70%;
+      height: auto;
+
+    }
+
+    @include media-down(sm) {
+      @include grid;
+
+
+    }
+
+  }
+
+  .text p {
+    text-align: justify;
+    max-width: 60%;
+    font-size: 1.3em;
+    line-break: normal;
+    text-indent: 2em;
+    white-space: pre-wrap;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    margin-left: 22rem;
+
+    @include media-down(xll) {
+      margin-left: 14rem;
+
+    }
+
+
+
+    @include media-down(xl) {
+      font-size: 1.3rem;
+
+    }
+
+    @include media-down(lg) {
+      font-size: 1.2rem;
+
+
+    }
+
+    @include media-down(md) {
+      font-size: 1.1rem;
+
+
+    }
+
+    @include media-down(sm) {
+      font-size: 0.8rem;
+
+
+    }
+  }
+}

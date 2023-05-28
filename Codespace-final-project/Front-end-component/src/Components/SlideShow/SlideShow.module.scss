@@ -1,0 +1,18 @@
+@import '../../Variables/Variables.scss';
+
+.sliderVeg {
+  background-color: white;
+
+}
+
+img {
+  @include sizeCarouselImages;
+
+  @include media-down(lg) {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+
+
+  }
+}

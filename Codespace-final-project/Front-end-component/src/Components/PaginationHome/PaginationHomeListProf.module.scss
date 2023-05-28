@@ -1,0 +1,69 @@
+@import '../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans&family=IBM+Plex+Sans:wght@300&family=PT+Sans&family=Satisfy&display=swap");
+
+.containerButtonsPageHomeListProf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: none;
+
+  .buttonPag {
+
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: $newColorBackGrounds;
+    border-radius: 50%;
+    border: 2px solid $newColorBackGrounds;
+    border: 2px solid $newColorBackGrounds;
+
+    margin: 1.5rem;
+    margin-left: 3rem;
+
+    @include media-down(md) {
+      display: none;
+
+    }
+  }
+
+  .buttonPag:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+
+  .buttonPagSeeAll {
+
+    font-family: 'Satisfy', cursive;
+    font-size: 1.5rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    color: rgb(233, 228, 228);
+    color: $newColorBackGrounds;
+    border-radius: 50%;
+    border: 2px solid $newColorBackGrounds;
+    margin: 1.5rem;
+    margin-left: 0.55rem;
+
+    @include media-down(md) {
+      display: none;
+
+    }
+  }
+
+  .buttonPagSeeAll:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+
+  .active {
+    background-color: $backgroundColorGeneral;
+  }
+
+  .missingButtons {
+    display: none;
+  }
+}

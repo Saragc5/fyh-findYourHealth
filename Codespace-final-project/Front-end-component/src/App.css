@@ -1,0 +1,15 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+html, body {
+  background-color: rgba(239, 244, 245, 0.614);
+}
+
+#root {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(239, 244, 245, 0.614);
+  font-family: "Albert Sans", sans-serif;
+}/*# sourceMappingURL=App.css.map */

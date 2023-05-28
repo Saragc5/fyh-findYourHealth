@@ -1,0 +1,98 @@
+@import '../../Variables/Variables.scss';
+
+.containerButtonsPage {
+  background-color: rgb(186, 209, 212, 0);
+  justify-content: center;
+
+
+  .buttonPage {
+
+    justify-content: center;
+    border-radius: 50%;
+    color: $newColorBackGrounds;
+    background-color: rgb(186, 209, 212, 0);
+    border: 2px solid rgb(186, 209, 212, 0);
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    margin-top: 1.5rem;
+
+
+
+    @include media-down(lg) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include media-down(md) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include media-down(sm) {
+      display: none;
+
+    }
+
+  }
+
+  .buttonPage:hover {
+    color: $colorYellowTexts;
+  }
+
+  .buttonPrevAndNext {
+    border-radius: 50%;
+    color: $newColorBackGrounds;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $newColorBackGrounds;
+    box-shadow: 0 0 0 1px $newColorBackGrounds;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 1.5rem;
+
+    @include media-down(lg) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include media-down(md) {
+      width: 30px;
+      height: 30px;
+    }
+
+
+
+  }
+
+  .buttonPrevAndNext:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+  }
+
+  .active {
+    border-radius: 50%;
+    color: $newColorBackGrounds;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(186, 209, 212, 0);
+    background-color: rgb(186, 209, 212, 0);
+
+    @include media-down(lg) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include media-down(md) {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include media-down(sm) {
+      display: none;
+
+    }
+  }
+
+}

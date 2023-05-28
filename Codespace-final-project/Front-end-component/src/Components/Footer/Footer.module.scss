@@ -1,0 +1,65 @@
+@import '../../Variables/Variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Carter+One&family=Just+Another+Hand&family=Nothing+You+Could+Do&display=swap");
+
+
+.footerPages {
+  background-color: $newColorbackgroundAqua;
+  background-color: $newColorBackGrounds;
+  font-family: 'Nothing You Could Do', cursive;
+
+
+  @include flex;
+  min-height: 5rem;
+  min-width: 100px;
+  font-weight: bolder;
+
+  @include media-down(lg) {
+    @include flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.1px;
+  }
+
+  .linkPages {
+    display: inline-block;
+
+
+    .links {
+      color: white;
+      margin: 1rem;
+      font-weight: bolder;
+      text-decoration: none;
+
+      @include media-down(lg) {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding-top: 2rem;
+      }
+
+      @include media-down(mmd) {
+        @include grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+
+      }
+    }
+  }
+
+  .icons {
+    display: inline-block;
+
+    span {
+      color: white;
+      margin: 1rem;
+      font-weight: bolder;
+
+      @include media-down(lg) {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding-top: 2rem;
+      }
+    }
+
+  }
+
+}

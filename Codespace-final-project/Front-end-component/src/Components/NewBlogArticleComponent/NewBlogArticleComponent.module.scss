@@ -1,0 +1,94 @@
+@import '../../Variables/Variables.scss';
+
+.newArticle {
+  @include formStyle;
+  gap: 0.5rem;
+  min-height: 90vh;
+
+  .headerForm {
+    .customFileUpload {
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      background-color: rgba(98, 64, 64, 0);
+      color: grey;
+      border-radius: 4px;
+      font-family: 'Albert Sans', sans-serif;
+      align-self: left;
+
+
+    }
+
+    .customFileUpload:hover {
+      background-color: $newColorBackGroundsLight;
+    }
+
+    .customFileUpload i {
+      margin-right: 5px;
+    }
+
+    .uploadDefault {
+      display: none;
+    }
+  }
+
+  .linkBtn {
+    background-color: $backgroundColorForms;
+    border: $backgroundColorForms;
+    width: 200px;
+  }
+
+  input {
+    @include sizeInputs;
+    border: 0.5px solid rgb(205, 203, 203);
+
+  }
+
+  input::placeholder {
+    color: grey;
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+  textarea {
+    @include sizeInputs;
+    border: 0.5px solid rgb(205, 203, 203);
+
+  }
+
+  textarea::placeholder {
+    color: grey;
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+  .submit {
+    @include buttonFormStyle;
+    width: 7rem;
+  }
+
+  .submit:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+
+  }
+
+  select {
+    @include sizeSelects;
+    background-color: rgb(236, 232, 232, 0);
+    border: 1px solid rgb(183, 181, 181);
+    font-family: 'Albert Sans', sans-serif;
+    color: grey;
+  }
+
+  select option {
+    color: grey;
+    font-family: 'Albert Sans', sans-serif;
+
+  }
+
+  .login {
+    background-color: $backgroundColorForms;
+    border: $backgroundColorForms;
+    width: 200px;
+  }
+
+}

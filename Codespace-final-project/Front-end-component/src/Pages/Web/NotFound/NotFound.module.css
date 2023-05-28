@@ -1,0 +1,33 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.container {
+  background-image: url("../../../Assets/Images/NotFound/notfound.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  justify-self: center;
+  padding: 1rem 1rem;
+  height: 100vh;
+}
+.container h3 {
+  font-size: 1.8rem;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 1024px) {
+  .container h3 {
+    font-size: 1.5rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container h3 {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .container h3 {
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+}/*# sourceMappingURL=NotFound.module.css.map */

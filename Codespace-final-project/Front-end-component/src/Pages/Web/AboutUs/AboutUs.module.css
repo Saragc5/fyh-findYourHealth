@@ -1,0 +1,79 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.whoContainer {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  width: 100%;
+  text-align: center;
+}
+.whoContainer .header {
+  background-image: url("../../../Assets/Images/Headers/food1.jpg");
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+}
+@media only screen and (max-width: 950px) {
+  .whoContainer .header {
+    height: 150px;
+  }
+}
+.whoContainer .cardPresentation {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  width: 70%;
+  height: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .whoContainer .cardPresentation {
+    gap: 3rem;
+    width: 70%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .whoContainer .cardPresentation {
+    display: grid;
+    place-items: center;
+    justify-items: center;
+  }
+}
+.whoContainer .text p {
+  text-align: justify;
+  max-width: 60%;
+  font-size: 1.3em;
+  line-break: normal;
+  text-indent: 2em;
+  white-space: pre-wrap;
+  line-height: 2.5;
+  letter-spacing: 1px;
+  margin-left: 22rem;
+}
+@media only screen and (max-width: 1560px) {
+  .whoContainer .text p {
+    margin-left: 14rem;
+  }
+}
+@media only screen and (max-width: 1229px) {
+  .whoContainer .text p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .whoContainer .text p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .whoContainer .text p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .whoContainer .text p {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=AboutUs.module.css.map */

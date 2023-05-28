@@ -1,0 +1,20 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.sliderVeg {
+  background-color: white;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1024px) {
+  img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=SlideShow.module.css.map */

@@ -1,0 +1,44 @@
+@import '../../../Variables/Variables.scss';
+
+.contactForm {
+  @include formStyle;
+  gap: 0.5rem;
+  min-height: 98vh;
+
+
+
+  input {
+    @include sizeInputs;
+    border: 0.5px solid rgb(205, 203, 203);
+  }
+
+  input::placeholder {
+    color: grey;
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+  textarea {
+    @include sizeTextArea;
+    border: 0.5px solid rgb(205, 203, 203);
+
+
+  }
+
+  textarea::placeholder {
+    color: grey;
+    font-family: 'Albert Sans', sans-serif;
+  }
+
+  .send {
+    @include buttonFormStyle;
+    width: 6.4rem;
+
+  }
+
+  .send:hover {
+    background-color: $newColorBackGrounds;
+    color: white;
+
+  }
+
+}

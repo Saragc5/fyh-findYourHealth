@@ -1,0 +1,9 @@
+.container-subtitle {
+  padding: 1em;
+  background-color: rgb(148, 187, 213);
+}
+.container-subtitle h1 {
+  color: grey;
+  font-style: oblique;
+  font-size: 2rem;
+}/*# sourceMappingURL=SubTitle.css.map */

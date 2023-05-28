@@ -1,0 +1,47 @@
+/*Styles just applied to screens width equal o higher than 768px (md) */
+/* Styles just applied to screens width equal o higher than 540px (sm) */
+.cardPresentation {
+  display: grid;
+  place-items: center;
+  justify-items: center;
+  width: 20rem;
+  height: 20rem;
+}
+@media only screen and (max-width: 1024px) {
+  .cardPresentation {
+    width: 50%;
+    height: auto;
+  }
+}
+.cardPresentation img {
+  width: 75%;
+  height: 100%;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .cardPresentation img {
+    width: 60%;
+    height: auto;
+    justify-self: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.cardPresentation h3 {
+  font-size: 2.8rem;
+}
+@media only screen and (max-width: 1024px) {
+  .cardPresentation h3 {
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cardPresentation h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .cardPresentation h3 {
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=CardPresentation.module.css.map */
