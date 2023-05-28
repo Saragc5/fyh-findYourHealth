@@ -31,12 +31,12 @@ It will use ReactJs and NodeJS, MongoDB for database.
 
 ## 3. Running the project:
 ### Import MongoDB file to your DB:
-Open the Terminal and run: mongo (to connect to the server) 
-With the Terminal, go to the directory where you have cloned the database that you want to import and run:
-	mongorestore --db fyh --archive=fyh.json
-	show databases
-	use fyh
-	show collections
+ * Open the Terminal and run: mongo (to connect to the server) 
+ * With the Terminal, go to the directory where you have cloned the database that you want to import and run:
+	* mongorestore --db fyh --archive=fyh.json
+	* show databases
+	* use fyh
+	* show collections
 There you will see 3 collections: blogarticles, contactforms and users.
 
 #### Backend:
