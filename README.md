@@ -12,13 +12,13 @@ As security for the endpoints that need it, I have used bcrypt for password encr
 
 
 ## The project has the following functionalities:
-	* Receive information from  users and blog database. 
- 	* Create, modify and delete user profile with text and image data.
-  * Discriminate between one type of user and another to show different functionalities.
- 	* Create new articles for the blog with text and image, not all users can do that.
- 	* Contact form with administrators that reaches a database  for later response.
- 	* Password modification and time to expire the session.
- 	* It is fully responsive. The user profile also has the option of viewing it in phone size.
+* Receive information from  users and blog database. 
+* Create, modify and delete user profile with text and image data.
+* Discriminate between one type of user and another to show different functionalities.
+* Create new articles for the blog with text and image, not all users can do that.
+* Contact form with administrators that reaches a database  for later response.
+* Password modification and time to expire the session.
+* It is fully responsive. The user profile also has the option of viewing it in phone size.
 
 # Getting started
 ## 1. Requirements
