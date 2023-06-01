@@ -24,9 +24,9 @@ As security for the endpoints that need it, I have used bcrypt for password encr
 ## 1. Requirements
 Please check if you have everything installed, like apache2, npm and mongodb.
 
-It will use ReactJs and NodeJS, MongoDB for database.
+It will use ReactJs, React Router and NodeJS with Express and MongoDB for database.
 ## 2. Installing (getting my project from Github)
-  git clone https://github.com/Saragc5/Codespace-final-project.git  
+  git clone https://github.com/Saragc5/fyh-findYourHealth.git   
   open it in Visual Studio Code (or the code editor that you have)
 
 ## 3. Running the project:
@@ -41,16 +41,13 @@ There you will see 3 collections: blogarticles, contactforms and users.
 
 #### Backend:
 Open the project in: Codespace-final-project and install the dependencies in the directory Backend-component/server:
-npm install
- 
-and then:
-npm start
+ * npm install
+ * npm start
 
 #### Frontend:
-Open the project in: Frontend_component and install the dependencies:
-npm install
-and then:
-npm start
+Open the project in: Codespace-final-project and install the dependencies in the directory Frontend_component:
+ * npm install
+ * npm start
 
 ##### You are ready to start!
 
