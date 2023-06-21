@@ -1,7 +1,7 @@
 # FYH (Find Your Health)
 Website where you can find a health professional among trainers, physical therapists and nutritionists who offers their services near by you.
 
-[![Veo muestra de proyecto presentado para proyecto fin de bootcamp](https://youtu.be/AWpcP-D5vDY)]
+[![Vídeo muestra de proyecto presentado para proyecto fin de bootcamp](https://i.ytimg.com/an_webp/AWpcP-D5vDY/mqdefault_6s.webp?du=3000&sqp=CKDqyqQG&rs=AOn4CLBJ6Yk8M0NWvtkgHe2hLb0Qfqoezg)](https://youtu.be/AWpcP-D5vDY)
 
 ## Presentation
 Hi there!👋 my name is Sara Gutiérrez Cortizo and this is my final project for CodeSpace Academy bootcamp, Full Stack Developer.
