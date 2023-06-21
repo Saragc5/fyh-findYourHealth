@@ -40,7 +40,7 @@ export default function ProfileClient() {
     if (token) {
       getInfoUser();
     } 
-  }, [token]);
+  }, [getInfoUser, token]);
 
 
 
