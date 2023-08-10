@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './NewBlogArticleComponent.module.scss'
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { BiUpload } from 'react-icons/bi'
+import { BiUpload } from 'react-icons/bi';
+import { port } from '../settings';
 
 export default function NewBlogArticleComponent() {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ export default function NewBlogArticleComponent() {
     formData.append('topic', topic);
 
     //Fetch to send the data to DB:
-    await fetch(`http://localhost:9000/blog/newBlogArticle`, {
+    await fetch(`http://localhost:${port}/blog/newBlogArticle`, {
       method: 'POST',
       body: formData,
       mode: "no-cors",
@@ -49,7 +50,7 @@ export default function NewBlogArticleComponent() {
         <span>
           {image ? (
             <img
-              src={`http://localhost:9000/public/${image}`}
+              src={`http://localhost:${port}/public/${image}`}
               alt="Blog article img to upload"
             />
           ) : (

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Contact.module.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { port } from '../../../Components/settings';
 
 export default function Contact() {
 
@@ -23,7 +23,7 @@ export default function Contact() {
   //Fucntion to manage the submit:
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch('http://localhost:9000/contact', {
+    await fetch(`http://localhost:${port}/contact`, {
       method: "POST",
       body: JSON.stringify(newEnquiry),
       mode: "cors",

@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { FiEdit2 } from 'react-icons/fi';
 import { MdCancel } from 'react-icons/md';
 import { BiUpload } from 'react-icons/bi';
-
+import { port } from '../../../../Components/settings';
 
 export default function ProfileAdmin() {
 
@@ -22,7 +22,7 @@ export default function ProfileAdmin() {
 
   ///Function to manage the initial user info when entering their profile after login
   const getInfoUser = async () => {
-    const response = await fetch(`http://localhost:9000/users/getuser/${id}`, {
+    const response = await fetch(`http://localhost:${port}/users/getuser/${id}`, {
       method: "GET",
       mode: "cors",
       headers: {
@@ -61,7 +61,7 @@ export default function ProfileAdmin() {
     const formData = new FormData();
     formData.append('image', inputImage.files[0])
 
-    await fetch(`http://localhost:9000/users/profile/uploadimage/${id}`, {
+    await fetch(`http://localhost:${port}/users/profile/uploadimage/${id}`, {
       method: 'POST',
       body: formData,
       mode: "no-cors",
@@ -80,7 +80,7 @@ export default function ProfileAdmin() {
   ///Functions to save data type text:
   const saveData = async (e) => {
     e.preventDefault();
-    await fetch(`http://localhost:9000/users/profile/categoryprof/${id}`, {
+    await fetch(`http://localhost:${port}/users/profile/categoryprof/${id}`, {
       method: "PATCH",
       body: JSON.stringify(newDetails),
       mode: "cors",

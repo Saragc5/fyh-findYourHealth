@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './LoginForm.module.scss';
 import { useNavigate, useLocation } from 'react-router-dom';
-
+import { port } from '../../../Components/settings';
 
 function LoginForm() {
 
@@ -16,7 +16,7 @@ function LoginForm() {
   const submitHandler = async (e) => {
     e.preventDefault();
 
-    await fetch('http://localhost:9000/login', {
+    await fetch(`http://localhost:${port}/login`, {
       method: "POST",
       body: JSON.stringify(details),
       mode: "cors",

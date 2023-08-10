@@ -7,6 +7,7 @@ import { AuthProvider } from '../../Components/AuthContext';
 import { MdEmail } from 'react-icons/md'
 import SubTitle from '../Subtitle/SubTitle';
 import Swal from 'sweetalert2';
+import { port } from '../settings';
 
 
 
@@ -41,7 +42,7 @@ export default function ProfessionalUser() {
 
   //Fetch to get the info from DB:
   const fetchUsers = async () => {
-    const result = await fetch(`http://localhost:9000/users/${id}`);
+    const result = await fetch(`http://localhost:${port}/users/${id}`);
     const data = await result.json();
     setProfessionals(data.user);
   };
@@ -61,7 +62,7 @@ export default function ProfessionalUser() {
         <SubTitle color="yellow" subTitle={professionals.profession} />
       </div>
       <div className={styles.containerDetails} key={id}>
-        <img src={!professionals.image ? ("/ImgsProf/no-picture.png") : `http://localhost:9000/public/${professionals.image}`} alt={`Foto del profesional ${professionals.username} ${professionals.profession}`} />
+        <img src={!professionals.image ? ("/ImgsProf/no-picture.png") : `http://localhost:${port}/public/${professionals.image}`} alt={`Foto del profesional ${professionals.username} ${professionals.profession}`} />
         <h1 className={styles.detailsName} >{professionals.firstname} {professionals.lastname}</h1>
         <h3 className={styles.detailsProfession} >{professionals.profession}</h3>
         <h3 className={styles.details} >Especiality: {professionals.speciality}</h3>

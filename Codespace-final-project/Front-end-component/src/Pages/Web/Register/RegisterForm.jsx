@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import styles from  './RegisterForm.module.scss';
+import { port } from '../../../Components/settings';
 
 export default function Register(props) {
   const navigate = useNavigate();
@@ -23,7 +24,7 @@ export default function Register(props) {
   //Function to control the submit:
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch('http://localhost:9000/users/register', {
+    await fetch(`http://localhost:${port}/users/register`, {
       method: "POST",
       body: JSON.stringify(newUser),
       mode: "cors",

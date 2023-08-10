@@ -4,6 +4,7 @@ import { useState, useContext } from 'react';
 import { AuthProvider } from '../../../Components/AuthContext';
 import styles from './ModifyPassword.module.scss';
 import Swal from 'sweetalert2';
+import { port } from '../../../Components/settings';
 
 export default function ModifyPassword() {
   const auth = useContext(AuthProvider);
@@ -50,7 +51,7 @@ export default function ModifyPassword() {
       token: token
     }
 
-    await fetch(`http://localhost:9000/users/api/modifyPassword`, {
+    await fetch(`http://localhost:${port}/users/api/modifyPassword`, {
       method: 'POST',
       mode: "cors",
       headers: {

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import PaginationBlog from '../PaginationBlog/PaginationBlog';
 import styles from './ListPost.module.scss';
+import { port } from '../settings';
 
 export default function ListPost(props) {
 
@@ -21,7 +22,7 @@ export default function ListPost(props) {
   
 
   //Fetch to get the info from DB
-  const url = "http://localhost:9000/blog";
+  const url = `http://localhost:${port}/blog`;
   const fetchPosts = async () => {
     const response = await fetch(url, { mode: "cors" });
     const data = await response.json();
@@ -67,7 +68,7 @@ export default function ListPost(props) {
                 <div className={styles.cardContainer} >
                   <img
                     src={!image ? ("/ImgBlog/imagen-no-disponible.jpg")
-                      : `http://localhost:9000/public/${image}`} alt={`imagen de ${_id}`} />
+                      : `http://localhost:${port}/public/${image}`} alt={`imagen de ${_id}`} />
                   <h3>{title}</h3>
                 </div>
               </Link>
@@ -97,7 +98,7 @@ export default function ListPost(props) {
                   <div className={styles.articles}>
                     <img
                       src={!image ? ("/ImgBlog/imagen-no-disponible.jpg")
-                        : `http://localhost:9000/public/${image}`}
+                        : `http://localhost:${port}/public/${image}`}
                       alt={`imagen del artículo ${_id}`} />
                     <h3 className={styles.articleTitle}>{title}</h3>
                     <p className={styles.paragraphArticle}>{text}</p>

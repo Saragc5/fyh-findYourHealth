@@ -40,7 +40,7 @@ export default function Article() {
         <img
           className={styles.imageArticle}
           src={!data.image ? ("/ImgBlog/imagen-no-disponible.jpg")
-            : `http://localhost:9000/public/${data.image}`} alt={`imagen del artículo ${id}`} />
+            : `http://localhost:${port}/public/${data.image}`} alt={`imagen del artículo ${id}`} />
         <div className={styles.titleArticle}>{data.title}</div>
         <p className={styles.textArticle}>{data.text} </p>
         <p className={styles.published}>Published by: {data.author} - on: {data.dateOfPublish}</p>

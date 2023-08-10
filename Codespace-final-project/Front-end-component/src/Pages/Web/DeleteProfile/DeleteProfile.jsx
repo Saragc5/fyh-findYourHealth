@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import styles from "./DeleteProfile.module.scss";
-
+import { port } from '../../../Components/settings';
 
 
 export default function DeleteProfile() {
@@ -12,7 +12,7 @@ export default function DeleteProfile() {
   const deleteProfile = async (e) => {
     e.preventDefault();
     const id = localStorage.getItem("id");
-    await fetch(`http://localhost:9000/users/profile/categoryprof/${id}`, {
+    await fetch(`http://localhost:${port}/users/profile/categoryprof/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

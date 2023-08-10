@@ -7,6 +7,7 @@ import PaginationHomeListProf from '../PaginationHome/PaginationHomeListProf';
 import { useContext } from 'react';
 import { AuthProvider } from '../AuthContext';
 import FunctionToTop from '../../Utils/FunctionToTop';
+import { port } from '../settings';
 
 export default function ListProfessionals(props) {
   const auth = useContext(AuthProvider);
@@ -40,7 +41,7 @@ export default function ListProfessionals(props) {
 
 
   //Fetch to get info from DB
-  const url = "http://localhost:9000/users";
+  const url = `http://localhost:${port}/users`;
   const fetchProfessionals = async () => {
     const response = await fetch(url, { mode: "cors" });
     const data = await response.json();
@@ -89,7 +90,7 @@ export default function ListProfessionals(props) {
               <li className={styles.slideProfessionals} key={_id}  >
                 <Link to={`/users/${_id}`} style={{ textDecoration: "none", listStyle: "none" }} >
                   <div className={styles.details}>
-                    <img src={!image ? ("/ImgsProf/no-picture.png") : `http://localhost:9000/public/${image}`} alt={`Foto del profesional ${firstname} ${profession}`} />
+                    <img src={!image ? ("/ImgsProf/no-picture.png") : `http://localhost:${port}/public/${image}`} alt={`Foto del profesional ${firstname} ${profession}`} />
                     <h4>{profession}</h4>
                   </div>
                 </Link>
@@ -123,7 +124,7 @@ export default function ListProfessionals(props) {
                 <li key={_id} className={styles.container} >
                   <Link to={`/users/${_id}`} className={styles.linkPerson}>
                     <div className={styles.card} >
-                      <img src={!image ? ("/ImgsProf/no-picture.png") : `http://localhost:9000/public/${image}`} alt={`Foto del profesional ${firstname} ${profession}`} />
+                      <img src={!image ? ("/ImgsProf/no-picture.png") : `http://localhost:${port}/public/${image}`} alt={`Foto del profesional ${firstname} ${profession}`} />
 
                       <div className={styles.otherDetails} >
                         <h2 >{firstname} {lastname}</h2>

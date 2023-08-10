@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { Navigate, useNavigate, useLocation } from "react-router-dom";
+import { port } from './settings';
 
 export const AuthContext = createContext();
 
@@ -20,7 +21,7 @@ export function AuthProvider(props) {
       else {
         const id = localStorage.getItem("id");
 
-        fetch(`http://localhost:9000/users/getuser/${id}`, {
+        fetch(`http://localhost:${port}/users/getuser/${id}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
