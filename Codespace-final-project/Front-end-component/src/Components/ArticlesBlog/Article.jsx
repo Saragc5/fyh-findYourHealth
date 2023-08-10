@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import styles from './Article.module.scss';
+import { port } from '../settings';
 
 
 
@@ -21,10 +22,10 @@ export default function Article() {
 
   //Fetch to get data from DB
   const fetchBlog = async () => {
-    const result = await fetch(`http://localhost:9000/blog/${id}`)
+    const result = await fetch(`http://localhost:${port}/blog/${id}`)
     const data = await result.json();
     setData(data.article);
-
+    console.log(port);
   };
 
 
