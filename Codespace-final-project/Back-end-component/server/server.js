@@ -49,6 +49,7 @@ const db = mongoose.connection;
 db.on("error", err => console.log("Connection to DB failed: ", err));
 db.once("open", () => console.log("Connected to DB successfuly"));
 
+
 app.listen(
   appConfig.port,
     () => console.log("Listening on port ", `${appConfig.port}`

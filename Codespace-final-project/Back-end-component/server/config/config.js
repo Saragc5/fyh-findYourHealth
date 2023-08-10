@@ -1,6 +1,6 @@
 // I set the environment variable "PORT" so that
-// take an existing one or assign it 9000 if it doesn't exist
-process.env.PORT = process.env.PORT || 9000;
+// take an existing one or assign it 8080 if it doesn't exist
+process.env.PORT = process.env.PORT || 8080;
 process.env.HOST = process.env.HOST || "http://localhost"
 process.env.DOMAIN = process.env.DOMAIN || "http://localhost:9000"
 
